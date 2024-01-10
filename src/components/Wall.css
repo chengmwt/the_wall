@@ -4,3 +4,15 @@
     margin: 0;
     background: grey;
 }
+
+.wall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: darkgrey;
+}
+
+.hidden {
+    visibility: hidden;
+}

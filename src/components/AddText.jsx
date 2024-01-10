@@ -22,7 +22,6 @@ const Text = ({ placeText }) => {
         setTextItem(newItem)
 
     }
-    console.log(textItem.fontColour)
 
     // When user clicks the mouse, set the cursor location and run add text
     const updateCursorLocation = (e) => {
