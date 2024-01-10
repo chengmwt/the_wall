@@ -15,14 +15,14 @@ const Text = ({ placeText }) => {
             name: prompt('add text', 'write something'),
             id: Math.random(),
             fontFamily: Math.floor(Math.random() * 15),
-            fontSize: Math.floor(Math.random() * 5 + 1),
-            fontColour: Math.floor(Math.random() * 10)
+            fontSize: Math.floor(Math.random() * 4 + 2),
+            fontColour: Math.floor(Math.random() * 4)
         }
-
         // Updates the text item
         setTextItem(newItem)
 
     }
+    console.log(textItem.fontColour)
 
     // When user clicks the mouse, set the cursor location and run add text
     const updateCursorLocation = (e) => {

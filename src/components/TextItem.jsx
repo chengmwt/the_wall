@@ -25,17 +25,11 @@ const TextItem = ({ text, cursorLocation, fontFamily, fontSize, fontColour }) =>
     // array of font colours for user to select or randomize
     const fontColourArray =
         [
-            '#ff80ed',
-            '#00ff00',
-            '#ffff66',
-            '#660066',
-            '#3399ff',
-            '#cc0000',
-            '#000000',
-            '#ffa500',
-            '#00ced1',
-            '#daa520',
-            '#420420',
+            '#41fdfe',
+            '#01ff07',
+            '#ff08e8',
+            '#fffd01',
+            '#ff000d',
         ]
 
 
