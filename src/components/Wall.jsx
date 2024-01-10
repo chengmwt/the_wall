@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Text from './Text'
 // import './Wall.css'
 
@@ -7,13 +7,11 @@ const Wall = () => {
     const [wallText, setWallText] = useState([])
 
 
-    const placeText = (text, cursorLocation) => {
+    const placeText = (textItem, cursorLocation) => {
 
-        setWallText([...wallText, { text, cursorLocation }])
+        setWallText([...wallText, { textItem, cursorLocation }])
 
     }
-
-    console.log(wallText)
 
 
     return (
@@ -22,6 +20,10 @@ const Wall = () => {
 
             <Text placeText={placeText} />
             {/* {wallText.map(() => <Text placeText={placeText} />)} */}
+            {wallText.map((textItem) => <div style={{ position: 'absolute', top: `${textItem.cursorLocation.y}px`, left: `${textItem.cursorLocation.x}px` }}>
+                {textItem.textItem.name}
+
+            </div>)}
         </div>
 
     )
