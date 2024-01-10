@@ -16,7 +16,7 @@ const Text = ({ placeText }) => {
             id: Math.random(),
             fontFamily: Math.floor(Math.random() * 15),
             fontSize: Math.floor(Math.random() * 4 + 2),
-            fontColour: Math.floor(Math.random() * 4)
+            fontColour: Math.floor(Math.random() * 5)
         }
         // Updates the text item
         setTextItem(newItem)
