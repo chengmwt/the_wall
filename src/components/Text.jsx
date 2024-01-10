@@ -9,7 +9,7 @@ const Text = ({ placeText }) => {
     const addText = () => {
 
         const newItem = {
-            name: prompt('add test', 'write something'),
+            name: prompt('add text', 'write something'),
             id: Math.random()
         }
 
@@ -25,9 +25,10 @@ const Text = ({ placeText }) => {
     }
 
 
-    useEffect(() => placeText(textItem, cursorLocation), [textItem])
+    useEffect(() => {
+        placeText(textItem, cursorLocation)
+    }, [textItem])
 
-    console.log(textItem, cursorLocation)
 
     useEffect(() => {
 
