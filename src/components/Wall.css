@@ -6,15 +6,14 @@
     width: 100vw;
     overflow: hidden;
     background-image: url('../assets/brick_wall.jpg');
-}
-
-.wall {
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     color: darkgrey;
 }
+
 
 .hidden {
     visibility: hidden;
